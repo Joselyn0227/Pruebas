@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias - Edge Computing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-end">
+            <a href="formulario.html" class="btn btn-primary me-2">Registrate</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contactanos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+            </div>
+            <!-- Botón "Quienes Somos" con Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quienesSomosModal">
+                Quienes Somos
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal "Quienes Somos" -->
+    <div class="modal fade" id="quienesSomosModal" tabindex="-1" aria-labelledby="quienesSomosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quienesSomosModalLabel">Quienes Somos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Somos un duo de jóvenes apasionados por la programación, los cuales desarrollamos esta página para enseñar sobre un área de la cual puede que no se tenga mucho conocimiento.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="que-es.html" class="nav-link">¿Qué es?</a></li>
+                            <li class="nav-item"><a href="como-funciona.html" class="nav-link">Cómo funciona</a></li>
+                            <li class="nav-item"><a href="beneficios.html" class="nav-link">Beneficios</a></li>
+                            <li class="nav-item"><a href="aplicaciones.html" class="nav-link">Aplicaciones</a></li>
+                            <li class="nav-item"><a href="retos.html" class="nav-link">Retos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-md-9 main-content">
+                <header class="hero">
+                    <h1>Noticias</h1>
+                </header>
+
+                <div class="container mt-5">
+                    <article>
+                        <h2>Microsoft colabora con la industria para habilitar nuevos escenarios 5G con Azure Edge Zones</h2>
+                        <p>La compañía anuncia avances que permiten combinar la potencia de Azure, 5G, operadores y partners tecnológicos en todo el mundo para habilitar nuevos escenarios para desarrolladores, clientes y socios, con el avance de Azure Edge Zones.</p>
+                    </article>
+
+                    <article>
+                        <h2>Telefónica y Microsoft establecen una alianza estratégica para diseñar la telco del futuro</h2>
+                        <p>Ambas compañías colaborarán en el desarrollo de nuevos servicios y experiencias de usuario, así como en la aplicación de tecnología inteligente a las redes.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="social-links d-flex justify-content-center mb-3">
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="contact-info text-center mb-3">
+                <p>Contacto: +57 317 123 4567</p>
+            </div>
+            <div class="credits text-center">
+                <p>Elaborado por: Ismael Pérez Ortiz y Joselyn Nieva Morales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

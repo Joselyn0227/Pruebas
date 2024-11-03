@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Funciona Edge Computing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-end">
+            <a href="formulario.html" class="btn btn-primary me-2">Registrate</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contactanos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+            </div>
+            <!-- Botón "Quienes Somos" con Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quienesSomosModal">
+                Quienes Somos
+            </button>
+        </div>
+    </div>
+    <!-- Modal "Quienes Somos" -->
+    <div class="modal fade" id="quienesSomosModal" tabindex="-1" aria-labelledby="quienesSomosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quienesSomosModalLabel">Quienes Somos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Somos un dúo de jóvenes apasionados por la programación, dedicados a desarrollar esta página para compartir conocimiento en un área que, aunque esencial, es aún poco conocida por muchos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="que-es.html" class="nav-link">¿Qué es?</a></li>
+                            <li class="nav-item"><a href="como-funciona.html" class="nav-link">Cómo funciona</a></li>
+                            <li class="nav-item"><a href="beneficios.html" class="nav-link">Beneficios</a></li>
+                            <li class="nav-item"><a href="aplicaciones.html" class="nav-link">Aplicaciones</a></li>
+                            <li class="nav-item"><a href="retos.html" class="nav-link">Retos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-md-9 main-content">
+                <header class="hero">
+                    <h1>¿Cómo Funciona?</h1>
+                </header>
+
+                <div class="container mt-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Funciones principales
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>El edge computing desempeña varias funciones clave que lo hacen valioso para diversas aplicaciones, especialmente aquellas que requieren baja latencia y procesamiento en tiempo real. A continuación se detallan sus funciones principales:</p>
+                                    
+                                    <h4>Procesamiento en Tiempo Real</h4>
+                                    <ul>
+                                        <li>Permite la toma de decisiones inmediatas, crucial en aplicaciones como vehículos autónomos y monitoreo de salud en tiempo real</li>
+                                    </ul>
+                                    
+                                    <h4>Reducción de Latencia</h4>
+                                    <ul>
+                                        <li>Al procesar datos cerca de la fuente, se minimiza el tiempo de respuesta, mejorando la experiencia del usuario en aplicaciones críticas</li>
+                                    </ul>
+                                    
+                                    <h4>Ahorro de Ancho de Banda</h4>
+                                    <ul>
+                                        <li>Reduce la necesidad de enviar grandes volúmenes de datos a la nube, lo que disminuye el uso de ancho de banda y costos asociados</li>
+                                    </ul>
+                                    
+                                    <h4>Filtrado de Datos</h4>
+                                    <ul>
+                                        <li>Realiza análisis preliminares para filtrar y procesar solo la información relevante antes de enviarla a la nube, optimizando el almacenamiento y el procesamiento</li>
+                                    </ul>
+                                    
+                                    <h4>Mejora de la Seguridad</h4>
+                                    <ul>
+                                        <li>Los datos sensibles pueden procesarse localmente, reduciendo la exposición durante la transmisión y el almacenamiento en la nube</li>
+                                    </ul>
+                                    
+                                    <h4>Conectividad Intermitente</h4>
+                                    <ul>
+                                        <li>Permite la operación continua en entornos con conectividad limitada, almacenando datos localmente y sincronizándolos más tarde con la nube</li>
+                                    </ul>
+                                    
+                                    <h4>Interoperabilidad y Composición de Servicios</h4>
+                                    <ul>
+                                        <li>Facilita la integración de múltiples dispositivos y servicios locales, lo que permite soluciones más robustas y personalizadas</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Tecnologías subyacentes
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>El edge computing se apoya en diversas tecnologías modernas para su funcionamiento:</p>
+                                    
+                                    <h4>Dispositivos IoT (Internet de las Cosas)</h4>
+                                    <ul>
+                                        <li>Sensores, cámaras y otros dispositivos conectados que generan datos y, a menudo, realizan procesamiento local</li>
+                                    </ul>
+                                    
+                                    <h4>Gateways</h4>
+                                    <ul>
+                                        <li>Dispositivos que actúan como intermediarios, recopilando y procesando datos de varios dispositivos IoT antes de enviarlos a la nube</li>
+                                    </ul>
+                                    
+                                    <h4>Computación en Contenedores</h4>
+                                    <ul>
+                                        <li>Tecnologías como Docker y Kubernetes permiten desplegar aplicaciones de manera eficiente en el edge, facilitando el escalado y la gestión</li>
+                                    </ul>
+                                    
+                                    <h4>Redes 5G</h4>
+                                    <ul>
+                                        <li>Proporcionan conectividad ultrarrápida y baja latencia, mejorando la capacidad del edge computing para aplicaciones en tiempo real</li>
+                                    </ul>
+                                    
+                                    <h4>Inteligencia Artificial (IA) y Machine Learning (ML)</h4>
+                                    <ul>
+                                        <li>Algoritmos que pueden ejecutarse en el borde para análisis y decisiones automatizadas, sin necesidad de enviar datos a la nube</li>
+                                    </ul>
+                                    
+                                    <h4>Microservicios</h4>
+                                    <ul>
+                                        <li>Arquitecturas que permiten que aplicaciones se dividan en servicios más pequeños, que pueden ser desplegados y gestionados en el edge de manera más eficiente</li>
+                                    </ul>
+                                    
+                                    <h4>Protocolos de Comunicación</h4>
+                                    <ul>
+                                        <li>Protocolos como MQTT, CoAP y WebSocket, que están diseñados para la comunicación eficiente entre dispositivos en entornos de edge computing</li>
+                                    </ul>
+                                    
+                                    <h4>Sistemas de Almacenamiento Local</h4>
+                                    <ul>
+                                        <li>Bases de datos y sistemas de archivos optimizados para almacenar y procesar datos en el edge, como Apache Cassandra o InfluxDB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="social-links d-flex justify-content-center mb-3">
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="contact-info text-center mb-3">
+                <p>Contacto: +1 234 567 890</p>
+            </div>
+            <div class="credits text-center">
+                <p>Elaborado por: Estudiantes de Tecnología Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

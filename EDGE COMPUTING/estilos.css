@@ -1,0 +1,288 @@
+/* Variables y reset */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+    --background-color: #f5f6fa;
+    --accent-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para la barra superior */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Estilos para el sidebar */
+.sidebar {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    margin-top: 40px; /* Ajusta según el tamaño de la barra superior */
+    width: 16.666667%; /* 2/12 columnas en Bootstrap */
+}
+
+/* Estilos para el hero section */
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para el contenedor principal */
+.main-content {
+    margin-left: 16.666667%; /* Ancho del sidebar */
+    padding: 20px;
+    flex: 1;
+}
+
+.intro-text {
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos para la sección de Temas Destacados */
+.featured-topics {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.topic {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.topic h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.topic p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.topic button {
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.topic button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: auto; /* Asegura que el footer se quede en la parte inferior */
+    width: 100%;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--secondary-color);
+}
+
+.contact-info, .credits {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+        height: auto;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .intro-text {
+        padding: 1rem;
+    }
+}
+/* Estilos para el fondo y el formulario de inicio de sesión */
+.login-background {
+    background-image: url('Imagenes/fondo.jpg'); /* Cambia 'fondo.jpg' por la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Asegura que el contenedor tenga una posición relativa */
+}
+
+.login-card {
+    width: 100%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente para el formulario */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative; /* Asegura que el formulario tenga una posición relativa */
+    z-index: 1; /* Asegura que el formulario esté por encima del fondo */
+}
+
+.login-card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.login-card .form-control {
+    border-radius: 5px;
+}
+
+.login-card .btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.login-card .btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.login-card .alert {
+    border-radius: 5px;
+}
+
+/* Media queries para hacer el formulario responsivo */
+@media (max-width: 576px) {
+    .login-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-card {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 992px) {
+    .login-card {
+        max-width: 70%;
+    }
+}
+
+/* Asegura que el formulario se mantenga centrado incluso al hacer zoom */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

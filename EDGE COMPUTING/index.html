@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tu guía completa sobre Edge Computing: fundamentos, implementación y casos de uso. Aprende cómo esta tecnología está transformando la manera en que procesamos datos en el borde de la red.">
+    <title>Edge Computing - La Nueva Era</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-end">
+            <a href="formulario.html" class="btn btn-primary me-2">Registrate</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contáctanos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Formulario de Contacto</a></li>
+                    <li><a class="dropdown-item" href="#">Contacto Directo</a></li>
+                </ul>
+            </div>
+            <!-- Botón "Quienes Somos" con Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quienesSomosModal">
+                Quienes Somos
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal "Quienes Somos" -->
+    <div class="modal fade" id="quienesSomosModal" tabindex="-1" aria-labelledby="quienesSomosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quienesSomosModalLabel">Quienes Somos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Somos un duo de jóvenes apasionados por la programación, los cuales desarrollamos esta página para enseñar sobre un área de la cual puede que no se tenga mucho conocimiento.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 sidebar">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="que-es.html" class="nav-link">¿Qué es?</a></li>
+                            <li class="nav-item"><a href="como-funciona.html" class="nav-link">Cómo funciona</a></li>
+                            <li class="nav-item"><a href="beneficios.html" class="nav-link">Beneficios</a></li>
+                            <li class="nav-item"><a href="aplicaciones.html" class="nav-link">Aplicaciones</a></li>
+                            <li class="nav-item"><a href="retos.html" class="nav-link">Retos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-md-10 main-content">
+                <header class="hero">
+                    <img src="Imagenes/Inicio.png" alt="Edge Computing Concepto" class="main-image">
+                    <div class="hero-text">
+                        <h1>Edge Computing</h1>
+                        <h2>La Nueva Era de la Computación en el Borde: Transformando el Futuro Digital</h2>
+                    </div>
+                </header>
+
+                <div class="container mt-5">
+                    <article class="intro-text">
+                        <p>En un mundo donde cada segundo cuenta y los datos fluyen constantemente, emerge una revolución silenciosa en la forma en que procesamos la información: el Edge Computing. Esta tecnología marca el inicio de una nueva era en la computación, donde el poder de procesamiento se acerca más que nunca a donde realmente se necesita.</p>
+                        
+                        <p>Imagina un mundo donde tus dispositivos inteligentes pueden tomar decisiones instantáneas sin necesidad de consultar servidores lejanos. Un mundo donde las ciudades inteligentes responden en tiempo real a las necesidades de sus ciudadanos, y donde las fábricas optimizan su producción segundo a segundo. Este es el mundo que el Edge Computing está construyendo hoy.</p>
+                        
+                        <p>En este espacio, exploraremos juntos cómo esta tecnología está redefiniendo los límites de lo posible en el procesamiento de datos. Desde sus fundamentos básicos hasta sus aplicaciones más innovadoras, descubriremos por qué el Edge Computing se ha convertido en un pilar fundamental de la transformación digital.</p>
+                        
+                        <p>Bienvenidos a un viaje por el futuro de la computación, donde la velocidad, la eficiencia y la innovación se encuentran en el borde de la red.</p>
+                        
+                        <button onclick="window.location.href='que-es.html'" class="btn btn-primary">Más información</button>
+                    </article>
+                </div>
+
+                <!-- Sección de Temas Destacados -->
+                <section class="featured-topics mt-5">
+                    <div class="container">
+                        <h2 class="mb-4">Temas Destacados</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="topic card mb-4">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Microsoft colabora con la industria para habilitar nuevos escenarios 5G con Azure Edge Zones</h3>
+                                        <p class="card-text">La compañía anuncia avances que permiten combinar la potencia de Azure...</p>
+                                        <a href="noticias.html" class="btn btn-primary">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="topic card mb-4">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Telefónica y Microsoft establecen una alianza estratégica para diseñar la telco del futuro</h3>
+                                        <p class="card-text">Ambas compañías colaborarán en el desarrollo...</p>
+                                        <a href="noticias.html" class="btn btn-primary">Leer más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="social-links d-flex justify-content-center mb-3">
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="contact-info text-center mb-3">
+                <p>Contacto: +57 317 123 4567</p>
+            </div>
+            <div class="credits text-center">
+                <p>Elaborado por: Ismael Pérez Ortiz y Joselyn Nieva Morales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones del Edge Computing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-end">
+            <a href="formulario.html" class="btn btn-primary me-2">Registrate</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contactanos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+            </div>
+            <!-- Botón "Quienes Somos" con Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quienesSomosModal">
+                Quiénes Somos
+            </button>
+        </div>
+    </div>
+    <!-- Modal "Quienes Somos" -->
+    <div class="modal fade" id="quienesSomosModal" tabindex="-1" aria-labelledby="quienesSomosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quienesSomosModalLabel">Quienes Somos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Somos un dúo de jóvenes apasionados por la programación, dedicados a desarrollar esta página para compartir conocimiento en un área que, aunque esencial, es aún poco conocida por muchos.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="que-es.html" class="nav-link">¿Qué es?</a></li>
+                            <li class="nav-item"><a href="como-funciona.html" class="nav-link">Cómo funciona</a></li>
+                            <li class="nav-item"><a href="beneficios.html" class="nav-link">Beneficios</a></li>
+                            <li class="nav-item"><a href="aplicaciones.html" class="nav-link">Aplicaciones</a></li>
+                            <li class="nav-item"><a href="retos.html" class="nav-link">Retos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-md-9 main-content">
+                <header class="hero">
+                    <h1>Aplicaciones del Edge Computing</h1>
+                </header>
+
+                <div class="container mt-5">
+                    <article>
+                        <p>El Edge Computing está revolucionando una amplia gama de industrias y aplicaciones al permitir el procesamiento de datos en tiempo real cerca del origen de los datos. A continuación, se detallan algunas de las aplicaciones más destacadas del Edge Computing:</p>
+
+                        <h2>1. Automatización Industrial</h2>
+                        <p>En la industria manufacturera, el Edge Computing permite la automatización y optimización de procesos en tiempo real. Sensores y dispositivos en las líneas de producción pueden analizar datos y tomar decisiones instantáneas para mejorar la eficiencia y reducir costos.</p>
+
+                        <h2>2. Vehículos Autónomos</h2>
+                        <p>Los vehículos autónomos requieren procesamiento de datos en tiempo real para tomar decisiones seguras y eficientes. El Edge Computing permite que los vehículos procesen datos de sensores y cámaras localmente, lo que reduce la latencia y mejora la seguridad.</p>
+
+                        <h2>3. Salud y Bienestar</h2>
+                        <p>En el sector de la salud, el Edge Computing se utiliza para monitorear pacientes en tiempo real y proporcionar alertas médicas instantáneas. Dispositivos portátiles y sensores pueden procesar datos de salud cerca del paciente, mejorando la atención y reduciendo la carga en los sistemas centralizados.</p>
+
+                        <h2>4. Ciudades Inteligentes</h2>
+                        <p>Las ciudades inteligentes utilizan el Edge Computing para gestionar recursos y servicios de manera eficiente. Sistemas de gestión de tráfico, iluminación pública y recolección de residuos pueden optimizarse mediante el procesamiento de datos en tiempo real en el borde de la red.</p>
+
+                        <h2>5. Agricultura de Precisión</h2>
+                        <p>La agricultura de precisión se beneficia del Edge Computing al permitir el monitoreo y control de cultivos en tiempo real. Sensores en los campos pueden analizar datos climáticos, de suelo y de plantas para optimizar el riego, la aplicación de fertilizantes y la detección de plagas.</p>
+
+                        <h2>6. Retail y Comercio Electrónico</h2>
+                        <p>En el sector retail, el Edge Computing se utiliza para mejorar la experiencia del cliente y optimizar las operaciones. Sistemas de análisis de datos en tiempo real pueden proporcionar recomendaciones personalizadas y gestionar inventarios de manera eficiente.</p>
+
+                        <h2>7. Seguridad y Vigilancia</h2>
+                        <p>El Edge Computing se utiliza en sistemas de seguridad y vigilancia para analizar video y datos de sensores en tiempo real. Esto permite la detección de amenazas y la toma de decisiones rápidas para mejorar la seguridad pública y privada.</p>
+
+                        <h2>8. Realidad Aumentada y Virtual</h2>
+                        <p>Aplicaciones de realidad aumentada y virtual requieren procesamiento de datos en tiempo real para proporcionar experiencias inmersivas. El Edge Computing permite el procesamiento local de datos, reduciendo la latencia y mejorando la calidad de las experiencias.</p>
+
+                        <h2>9. Energía y Sostenibilidad</h2>
+                        <p>En el sector energético, el Edge Computing se utiliza para optimizar la generación y distribución de energía. Sistemas de monitoreo en tiempo real pueden gestionar la producción de energía renovable y optimizar la eficiencia energética en edificios y ciudades.</p>
+
+                        <h2>10. Logística y Cadena de Suministro</h2>
+                        <p>La logística y la cadena de suministro se benefician del Edge Computing al permitir el monitoreo y gestión en tiempo real de activos y operaciones. Sensores y dispositivos pueden optimizar rutas, gestionar inventarios y mejorar la eficiencia logística.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="social-links d-flex justify-content-center mb-3">
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="contact-info text-center mb-3">
+                <p>Contacto: +57 317 123 4567</p>
+            </div>
+            <div class="credits text-center">
+                <p>Elaborado por: Ismael Pérez Ortiz y Joselyn Nieva Morales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

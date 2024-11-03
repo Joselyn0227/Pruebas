@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es Edge Computing?</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container d-flex justify-content-end">
+            <a href="formulario.html" class="btn btn-primary me-2">Registrate</a>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Contactanos
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Opción 1</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 2</a></li>
+                    <li><a class="dropdown-item" href="#">Opción 3</a></li>
+                </ul>
+            </div>
+            <!-- Botón "Quienes Somos" con Modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#quienesSomosModal">
+                Quienes Somos
+            </button>
+        </div>
+    </div>
+    <!-- Modal "Quienes Somos" -->
+    <div class="modal fade" id="quienesSomosModal" tabindex="-1" aria-labelledby="quienesSomosModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="quienesSomosModalLabel">Quienes Somos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Somos un duo de jóvenes apasionados por la programación, los cuales desarrollamos esta página para enseñar sobre un área de la cual puede que no se tenga mucho conocimiento.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 sidebar">
+                <nav class="navbar navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                            <li class="nav-item"><a href="que-es.html" class="nav-link">¿Qué es?</a></li>
+                            <li class="nav-item"><a href="como-funciona.html" class="nav-link">Cómo funciona</a></li>
+                            <li class="nav-item"><a href="beneficios.html" class="nav-link">Beneficios</a></li>
+                            <li class="nav-item"><a href="aplicaciones.html" class="nav-link">Aplicaciones</a></li>
+                            <li class="nav-item"><a href="retos.html" class="nav-link">Retos</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="col-md-9 main-content">
+                <header class="hero">
+                    <h1>¿Qué es Edge Computing?</h1>
+                </header>
+
+                <div class="container mt-5">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Definición básica
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>Edge computing es un paradigma de computación distribuida que consiste en procesar y analizar datos lo más cerca posible de donde estos se generan - en el "borde" o "límite" de la red, en lugar de en ubicaciones centralizadas distantes. Este modelo de computación traslada las capacidades de procesamiento, almacenamiento y análisis directamente a los dispositivos, sensores, actuadores y otros puntos finales que se encuentran físicamente próximos a la fuente de información. Es una evolución natural de la arquitectura tradicional cliente-servidor que responde a las crecientes necesidades de procesamiento en tiempo real y a la explosión de dispositivos conectados en el Internet de las Cosas (IoT). En el edge computing, la inteligencia computacional se distribuye a lo largo de toda la red, desde los dispositivos más pequeños hasta los centros de datos tradicionales, creando una infraestructura tecnológica más versátil y adaptativa. 
+                                        <br>Aspectos principales:</p>
+                                    <ul>
+                                        <li>Descentralización del procesamiento de datos</li>
+                                        <li>Proximidad física al origen de los datos</li>
+                                        <li>Red de dispositivos y sensores interconectados en el borde</li>
+                                        <li>Capacidad de computación local y autónoma</li>
+                                        <li>Arquitectura distribuida que complementa la computación en la nube</li>
+                                        <li>Integración con dispositivos IoT y sistemas embebidos</li>
+                                        <li>Procesamiento de datos en tiempo real en el punto de origen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Importancia en la actualidad
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>El edge computing se ha convertido en un componente crítico de la infraestructura tecnológica moderna por diversas razones fundamentales:</p>
+                                    
+                                    <h4>Crecimiento Exponencial de Datos</h4>
+                                    <p>La explosión de dispositivos IoT y la digitalización masiva están generando cantidades sin precedentes de datos. Para 2025, se estima que habrá más de 75 mil millones de dispositivos IoT conectados. El edge computing permite procesar esta avalancha de datos de manera eficiente y escalable, evitando la sobrecarga de las redes y centros de datos centralizados.</p>
+                                    
+                                    <h4>Demanda de Respuesta en Tiempo Real</h4>
+                                    <p>En la era digital actual, numerosas aplicaciones requieren respuestas instantáneas:</p>
+                                    <ul>
+                                        <li>Vehículos autónomos que necesitan tomar decisiones en milisegundos</li>
+                                        <li>Sistemas de monitoreo médico que deben detectar emergencias instantáneamente</li>
+                                        <li>Procesos industriales automatizados que requieren ajustes inmediatos</li>
+                                        <li>Aplicaciones de realidad aumentada y virtual que demandan latencia ultrabaja</li>
+                                    </ul>
+                                    
+                                    <h4>Optimización de Recursos y Costos</h4>
+                                    <p>El procesamiento en el borde ofrece beneficios económicos significativos:</p>
+                                    <ul>
+                                        <li>Reducción del ancho de banda necesario para transmisión de datos</li>
+                                        <li>Disminución de costos de almacenamiento en la nube</li>
+                                        <li>Menor consumo energético en centros de datos</li>
+                                        <li>Optimización de recursos computacionales</li>
+                                    </ul>
+                                    
+                                    <h4>Mejora en la Seguridad y Privacidad</h4>
+                                    <p>En un mundo cada vez más preocupado por la privacidad de los datos:</p>
+                                    <ul>
+                                        <li>Vehículos autónomos que necesitan tomar decisiones en milisegundos</li>
+                                        <li>Sistemas de monitoreo médico que deben detectar emergencias instantáneamente</li>
+                                        <li>Procesos industriales automatizados que requieren ajustes inmediatos</li>
+                                        <li>Aplicaciones de realidad aumentada y virtual que demandan latencia ultrabaja</li>
+                                    </ul>
+
+                                    <h4>Resiliencia y Confiabilidad</h4>
+                                    <p>El edge computing fortalece la infraestructura digital:</p>
+                                    <ul>
+                                        <li>Operación continua incluso con conectividad intermitente</li>
+                                        <li>Mayor resistencia a fallos de red</li>
+                                        <li>Redundancia y respaldo distribuido</li>
+                                        <li>Menor dependencia de conexiones a internet centralizadas</li>
+                                    </ul>
+
+                                    <h4>Innovación y Nuevas Posibilidades</h4>
+                                    <p>El procesamiento en el borde está habilitando nuevas aplicaciones y casos de uso:</p>
+                                    <ul>
+                                        <li>Ciudades inteligentes con gestión de tráfico en tiempo real</li>
+                                        <li>Agricultura de precisión con monitoreo y respuesta inmediata</li>
+                                        <li>Manufactura inteligente con control de calidad automatizado</li>
+                                        <li>Experiencias de realidad mixta inmersivas</li>
+                                    </ul>
+
+                                    <h4>Sostenibilidad</h4>
+                                    <p>El edge computing contribuye a la sostenibilidad ambiental:</p>
+                                    <ul>
+                                        <li>Reducción de la huella de carbono al optimizar el uso de recursos</li>
+                                        <li>Menor consumo energético en transmisión de datos</li>
+                                        <li>Apoyo a iniciativas de ciudades y edificios verdes</li>
+                                        <li>Optimización de sistemas de energía renovable</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Diferencias con la computación tradicional
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>A diferencia de la computación tradicional en la nube, el Edge Computing procesa los datos cerca del origen, reduciendo el tiempo de respuesta y el ancho de banda necesario para la transmisión de datos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="social-links d-flex justify-content-center mb-3">
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon text-white me-3"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="contact-info text-center mb-3">
+                <p>Contacto: +57 317 123 4567</p>
+            </div>
+            <div class="credits text-center">
+                <p>Elaborado por: Ismael Pérez Ortiz y Joselyn Nieva Morales</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
